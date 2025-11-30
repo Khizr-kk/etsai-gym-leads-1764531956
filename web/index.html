@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymGrow - Convert More Leads, Grow Your Gym</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box; /* Ensures padding doesn't push content beyond max-width */
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #eeeeee;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        header h1 {
+            font-size: 2.2em;
+            margin: 0;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            color: #34495e;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .hero {
+            background-color: #2ecc71; /* Fresh green */
+            color: #ffffff;
+            padding: 70px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        .button {
+            display: inline-block;
+            background-color: #27ae60; /* Darker green for contrast */
+            color: #ffffff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .button:hover {
+            background-color: #2ecc71;
+            transform: translateY(-2px);
+        }
+        .features, .pricing {
+            padding: 70px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .features li {
+            background-color: #f5f5f5;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+        .features li:hover {
+            transform: translateY(-5px);
+        }
+        .features li h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        .pricing p {
+            text-align: center;
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 20px auto 40px auto;
+        }
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #2ecc71;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #27ae60;
+            text-decoration: underline;
+        }
+
+        /* Mobile responsiveness adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .hero {
+                padding: 50px 15px;
+            }
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .features, .pricing {
+                padding: 50px 15px;
+            }
+            .features ul {
+                grid-template-columns: 1fr; /* Stack features on small screens */
+            }
+            .features li h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GymGrow</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Convert More Leads. Grow Your Gym.</h1>
+            <p>An all-in-one platform for Indian small gym owners to capture, track, and convert leads effortlessly from WhatsApp & Instagram.</p>
+            <a href="#" class="button">Get Started Free</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Effortless Lead Management for Your Gym</h2>
+            <ul>
+                <li>
+                    <h3>Direct Social Media Capture</h3>
+                    <p>Integrate seamlessly with WhatsApp Business and Instagram DMs to automatically capture every incoming lead.</p>
+                </li>
+                <li>
+                    <h3>Centralized Lead Dashboard</h3>
+                    <p>Access all your inquiries in one intuitive dashboard. See lead status, history, and notes at a glance.</p>
+                </li>
+                <li>
+                    <h3>Automated Follow-up Reminders</h3>
+                    <p>Never miss a potential member. Set smart reminders and automate follow-ups to keep leads engaged.</p>
+                </li>
+                <li>
+                    <h3>Customizable Lead Tracking</h3>
+                    <p>Track leads through your sales pipeline with custom statuses like 'New', 'Contacted', 'Trial Booked', and 'Converted'.</p>
+                </li>
+                <li>
+                    <h3>Insightful Performance Reports</h3>
+                    <p>Understand your lead sources, conversion rates, and overall growth with simple, easy-to-read reports.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Simple & Affordable Pricing</h2>
+            <p>Designed specifically for small local gyms in India. Grow your business without unexpected costs with our clear, flexible plans.</p>
+            <a href="#" class="button">View Plans</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 GymGrow. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@gymgrow.com">info@gymgrow.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
